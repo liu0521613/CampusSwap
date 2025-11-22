@@ -7,7 +7,7 @@
     "dev:client": "vite --host --port 3000",
     "dev": "pnpm dev:client",
     "build:client": "vite build --outDir dist/static",
-    "build": "rimraf dist && pnpm build:client && copy package.json dist\\ && copy _redirects dist\\static\\ && echo. > dist\\build.flag"
+    "build": "node build.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.84.0",
