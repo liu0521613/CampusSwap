@@ -1,0 +1,81 @@
+import { Category, Item } from '../types';
+
+// 预设分类数据
+export const categories: Category[] = [
+  { id: '1', name: '书籍教材', sortOrder: 1 },
+  { id: '2', name: '电子设备', sortOrder: 2 },
+  { id: '3', name: '生活用品', sortOrder: 3 },
+  { id: '4', name: '运动器材', sortOrder: 4 },
+  { id: '5', name: '服饰鞋包', sortOrder: 5 },
+  { id: '6', name: '其他', sortOrder: 6 },
+];
+
+// 模拟物品数据
+export const mockItems: Item[] = [
+  {
+    id: '1',
+    title: '高等数学教材（上册）',
+    price: 30.00,
+    description: '九成新，内容完整无破损，适合大一新生使用',
+    imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=portrait_4_3&prompt=Textbook%2C%20math%20book%2C%20college%20textbook&sign=66097dd10aa710c0b22f59c61c40dccc',
+    categoryId: '1',
+    publisher: '小明同学',
+    contact: 'QQ: 123456789',
+    createdAt: new Date('2025-11-20T10:00:00'),
+  },
+  {
+    id: '2',
+    title: 'iPad Pro 2022',
+    price: 4500.00,
+    description: '256GB 深空灰色，配原装充电器和保护套，使用半年',
+    imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=portrait_4_3&prompt=iPad%20Pro%2C%20tablet%20computer%2C%20with%20case&sign=d52dc7bb9c115e44983fcd0c27e9e776',
+    categoryId: '2',
+    publisher: '科技达人',
+    contact: '微信: techlover',
+    createdAt: new Date('2025-11-19T15:30:00'),
+  },
+  {
+    id: '3',
+    title: '折叠书桌',
+    price: 80.00,
+    description: '可折叠式书桌，适合宿舍使用，方便收纳',
+    imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=portrait_4_3&prompt=Folding%20desk%2C%20dorm%20furniture&sign=c25e2d6a0c1f2c2bc26ad18db1edf153',
+    categoryId: '3',
+    publisher: '宿舍长',
+    contact: '电话: 13800138001',
+    createdAt: new Date('2025-11-18T09:15:00'),
+  },
+  {
+    id: '4',
+    title: '篮球',
+    price: 50.00,
+    description: '斯伯丁篮球，使用一年，气还很足',
+    imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=portrait_4_3&prompt=Basketball%2C%20sports%20equipment&sign=b03eacd830680fe368da3ccddf13bbfe',
+    categoryId: '4',
+    publisher: '篮球爱好者',
+    contact: 'QQ: 987654321',
+    createdAt: new Date('2025-11-17T16:45:00'),
+  },
+  {
+    id: '5',
+    title: '冬季羽绒服',
+    price: 200.00,
+    description: 'M码，保暖效果好，去年买的，没怎么穿过',
+    imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=portrait_4_3&prompt=Winter%20down%20jacket%2C%20clothing&sign=50d1420b79e559787ddd3176805a65f8',
+    categoryId: '5',
+    publisher: '时尚达人',
+    contact: '微信: fashion123',
+    createdAt: new Date('2025-11-16T14:20:00'),
+  },
+  {
+    id: '6',
+    title: '吉他',
+    price: 350.00,
+    description: '入门级民谣吉他，送教材和拨片',
+    imageUrl: 'https://space.coze.cn/api/coze_space/gen_image?image_size=portrait_4_3&prompt=Acoustic%20guitar%2C%20musical%20instrument&sign=035a61702c8ddaf6239df1233b0ece10',
+    categoryId: '6',
+    publisher: '音乐爱好者',
+    contact: '电话: 13900139001',
+    createdAt: new Date('2025-11-15T11:30:00'),
+  },
+];
