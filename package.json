@@ -7,7 +7,7 @@
     "dev:client": "vite --host --port 3000",
     "dev": "pnpm dev:client",
     "build:client": "vite build --outDir dist/static",
-    "build": "rm -rf dist && pnpm build:client && cp package.json dist && touch dist/build.flag"
+    "build": "rimraf dist && pnpm build:client && copy package.json dist\\ && echo. > dist\\build.flag"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.84.0",
@@ -28,6 +28,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
+    "rimraf": "^6.1.2",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
